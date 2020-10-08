@@ -136,16 +136,16 @@ def reply_to_mentions(word_dictionary):
 
 
 while True:
-	print('creating the markov chain dictionary...')
+	print('creating the markov chain dictionary... ' + USER_TO_COPY)
 	word_dictionary = markov()
 
 	#reply_to_mentions(word_dictionary)
 
     # post once for every 150 tries
-	if random.randint(1, 150) == 1:
-		print('AWAKEN... GENERATING TWEET...')
+	if random.randint(1, 2) == 1:
+		print('AWAKEN... GENERATING TWEET... ')
 		api.update_status(generate_tweet(word_dictionary))
-
+		#USER_TO_COPY = random.choice(RANDOMLIST)
 	print('sleep mode for 1 minute...\n')
 
 	time.sleep(60)
