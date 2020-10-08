@@ -1,11 +1,10 @@
 import tweepy
-import re
 import random
 import time
 import os
-from os import environ
+import re
 
-
+#some sadtrash took your sadtrash and made it trashy 
 
 
 CONSUMER_KEY = environ['CONSUMER_KEY']
@@ -13,7 +12,8 @@ CONSUMER_SECRET = environ['CONSUMER_SECRET']
 ACCESS_KEY = environ['ACCESS_KEY']
 ACCESS_SECRET = environ['ACCESS_SECRET']
 
-USER_TO_COPY = environ['USER_TO_COPY']
+RANDOMLIST = 'MalwareJake', 'idocrime', 'jstnkndy', 'elonmusk', 'Snowden', 'nullenc0de', 'cantcomputer', 'qwertyuiop', 'neiltyson' 'LulzSecOps' 'sshell_', 'notdan', 'TNneenan', 'thepacketrat', 'Krazed', 'StephenKing', 'HackingDave'   # my comma period and enter and colon button stopped working here with my right arrow key
+USER_TO_COPY = random.choice(RANDOMLIST)
 NUM_OF_TWEETS = 2000
 
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
@@ -149,5 +149,3 @@ while True:
 	print('sleep mode for 1 minute...\n')
 
 	time.sleep(60)
-
-
