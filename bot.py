@@ -145,7 +145,7 @@ while True:
 	if random.randint(1, 2) == 1:
 		print('AWAKEN... GENERATING TWEET... ')
 		api.update_status(generate_tweet(word_dictionary))
-		#USER_TO_COPY = random.choice(RANDOMLIST)
+		USER_TO_COPY = random.choice(RANDOMLIST)
 	print('sleep mode for 1 minute...\n')
 
 	time.sleep(60)
